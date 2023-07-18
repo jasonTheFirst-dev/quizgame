@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I-learnCode</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="codes.js" defer></script>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div id="logo">i-learn<span>code</span></div>
+      <nav class="nav">
+        <li class="home--link"><a href="#">Home</a></li>
+      </nav>
+    </header>
+    <section id="main" class="main">
+      <section id="home--sec" class="home--sec">
+        <h1 class="home--title">
+          Welcome to <span class="trade--logo">i-learn code</span> <br />
+          <span class="title--dash">-</span>the ultimate coding quiz platform
+        </h1>
+        <p class="home--para">
+          Learn programming while having fun with our coding quizzes! Enhance
+          your coding skills, practice problem-solving, and explore various
+          programming concepts through our interactive quiz challenges. Whether
+          you're a beginner or an experienced programmer, i-Learn Code provides
+          an engaging and educational platform to expand your programming
+          knowledge.
+        </p>
+        <div class="hm--ipt--con">
+          <div class="username">
+            <input
+              type="text"
+              name="alias"
+              id="alias"
+              maxlength="30"
+              placeholder="Enter your name"
+              class="alias"
+            />
+          </div>
+          <button class="play--btn">Play now</button>
+        </div>
+      </section>
+    </section>
+    <!-- this is a layout for the pop to quiz  start-->
+    <section id="pop--con" class="pop--con" hidden>
+      <div class="popup">
+        <div class="popup--description">
+          <h1>hello <span class="usersay"></span></h1>
+          <h2>welcome to i-learn code</h2>
+          <p>
+            Embark on an exciting learning journey filled with fun in our
+            programming quiz game! Test your coding knowledge and skills as you
+            advance through two captivating stages. No matter if you're new to
+            programming or a seasoned developer, this game presents a
+            stimulating and fulfilling experience. Prepare yourself to take on a
+            series of thought provoking questions that will enrich your
+            programming abilities and broaden your understanding. Maintain
+            composure and concentration as you navigate through the levels,
+            knowing that each question serves as a chance to expand your
+            knowledge and progress. Don't hesitate any longer! Click the
+            'continue' button and immerse yourself in this thrilling coding
+            adventure!
+          </p>
+        </div>
+        <div class="pop--btn--con">
+          <button class="pop--btn">continue</button>
+        </div>
+      </div>
+    </section>
+    <!-- this is a layout for the pop to quiz end-->
+    <!-- The layout for the dashboard  start here-->
+    <section id="dash--con" class="dash--con" hidden>
+      <div class="dash--inner">
+        <div class="welcome--con">
+          <div class="greet--con">You are welcome!</div>
+          <div class="dp--playername">
+            player: <span class="avatar">as</span>
+          </div>
+        </div>
+        <div class="level--container">
+          <div class="lv--1 lv"></div>
+          <!-- <div class="lv--2 lv"></div> -->
+        </div>
+        <div class="Q--con">
+          <div class="Q">
+            <div class="Q--inner">
+              <div class="slider--con">
+                <!-- SLIDE--ONE START HERE -->
+                <div class="slide--con slide--con--1">
+                  <div class="quest--con quest--con--1" data-level1="1">
+                    <div class="ques--brd--num">
+                      <div class="ques--num">1</div>
+                      <div class="ques--brd">
+                        Which programming language is known for its use in web
+                        development?
+                      </div>
+                    </div>
+                    <div class="ques--rep">
+                      <div class="ans--con ans--con--1">
+                        <input
+                          type="radio"
+                          name="anson1"
+                          id="ans--1"
+                          class="ans--input"
+                          data-wrong="wrong"
+                        />
+                        <label for="ans--1">python</label>
+                      </div>
+                      <div class="ans--con ans--con--2">
+                        <input
+                          type="radio"
+                          name="anson1"
+                          id="ans--2"
+                          class="ans--input"
+                          data-answer="correct"
+                        />
+                        <label for="ans--2">HTML</label>
+                      </div>
+                      <div class="ans--con ans--con--3">
+                        <input
+                          type="radio"
+                          name="anson1"
+                          id="ans--3"
+                          class="ans--input"
+                          data-wrong="wrong"
+                        />
+                        <label for="ans--3"> java </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quest--con quest--con--2" data-level1="2">
+                    <div class="ques--brd--num">
+                      <div class="ques--num">2</div>
+                      <div class="ques--brd">
+                        In JavaScript, what is the correct way to declare a
+                        variable?
+                      </div>
+                    </div>
+                    <div class="ques--rep">
+                      <div class="ans--con ans--con--1">
+                        <input
+                          type="radio"
+                          name="anson2"
+                          id="ans--1.1"
+                          class="ans--input"
+                          data-wrong="wrong"
+                        />
+                        <label for="ans--1.1"> intx = 10; </label>
+                      </div>
+                      <div class="ans--con ans--con--2">
+                        <input
+                          type="radio"
+                          name="anson2"
+                          id="ans--2.1"
+                          class="ans--input"
+                          data-wrong="wrong"
+                        />
+                        <label for="ans--2.1">variable x= 5;</label>
+                      </div>
+                      <div class="ans--con ans--con--3">
+                        <input
+                          type="radio"
+                          name="anson2"
+                          id="ans--3.1"
+                          class="ans--input"
+                          data-answer="correct"
+                        />
+                        <label for="ans--3.1"> var x= 10; </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- SLIDE--ONE END HERE -->
+                <!-- SLIDE--2 START HERE -->
+                <div class="slide--con slide--con--2">
+                  <div class="quest--con quest--con--3" data-level1="3">
+                    <div class="ques--brd--num">
+                      <div class="ques--num">3</div>
+                      <div class="ques--brd">
+                        Which programming concept is used to store a sequence of
+                        elements in a single variable?
+                      </div>
+                    </div>
+                    <div class="ques--rep">
+                      <div class="ans--con ans--con--1">
+                        <input
+                          type="radio"
+                          name="anson3"
+                          id="ans--sl2-1"
+                          class="ans--input"
+                          data-answer="correct"
+                        />
+                        <label for="ans--sl2-1"> Array </label>
+                      </div>
+                      <div class="ans--con ans--con--2">
+                        <input
+                          type="radio"
+                          name="anson3"
+                          id="ans--sl2-2"
+                          class="ans--input"
+                          data-wrong="wrong"
+                        />
+                        <label for="ans--sl2-2">string</label>
+                      </div>
+                      <div class="ans--con ans--con--3">
+                        <input
+                          type="radio"
+                          name="anson3"
+                          id="ans--sl2-3"
+                          class="ans--input"
+                          data-wrong="wrong"
+                        />
+                        <label for="ans--sl2-3"> function </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quest--con quest--con--4" data-level1="4">
+                    <div class="ques--brd--num">
+                      <div class="ques--num">4</div>
+                      <div class="ques--brd">
+                        What is the purpose of the "for" loop in programming?
+                      </div>
+                    </div>
+                    <div class="ques--rep">
+                      <div class="ans--con ans--con--1">
+                        <input
+                          type="radio"
+                          name="anson4"
+                          id="ans--sl2-1.1"
+                          class="ans--input"
+                          data-wrong="wrong"
+                        />
+                        <label for="ans--sl2-1.1">
+                          It selects a random value from an array</label
+                        >
+                      </div>
+                      <div class="ans--con ans--con--2">
+                        <input
+                          type="radio"
+                          name="anson4"
+                          id="ans--sl2-1.2"
+                          class="ans--input"
+                          data-wrong="wrong"
+                        />
+                        <label for="ans--sl2-1.2"
+                          >It performs mathematical calculations</label
+                        >
+                      </div>
+                      <div class="ans--con ans--con--3">
+                        <input
+                          type="radio"
+                          name="anson4"
+                          id="ans--sl2-1.3"
+                          class="ans--input"
+                          data-answer="correct"
+                        />
+                        <label for="ans--sl2-1.3">
+                          It repeats a set of statements a certain number of
+                          times
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- SLIDE--2 END HERE -->
+                <!-- SLIDE--3 START HERE -->
+                <div class="slide--con slide--con--3">
+                  <div class="quest--con quest--con--5" data-level1="5">
+                    <div class="ques--brd--num">
+                      <div class="ques--num">5</div>
+                      <div class="ques--brd">
+                        Which symbol is used for concatenation in PHP?
+                      </div>
+                    </div>
+                    <div class="ques--rep">
+                      <div class="ans--con ans--con--1">
+                        <input
+                          type="radio"
+                          name="anson5"
+                          id="ans--sl3-1"
+                          class="ans--input"
+                          data-answer="correct"
+                        />
+                        <label for="ans--sl3-1">.</label>
+                      </div>
+                      <div class="ans--con ans--con--2">
+                        <input
+                          type="radio"
+                          name="anson5"
+                          id="ans--sl3-2"
+                          class="ans--input"
+                          data-wrong="wrong"
+                        />
+                        <label for="ans--sl3-2">&</label>
+                      </div>
+                      <div class="ans--con ans--con--3">
+                        <input
+                          type="radio"
+                          name="anson5"
+                          id="ans--sl3-3"
+                          class="ans--input"
+                          data-wrong="wrong"
+                        />
+                        <label for="ans--sl3-3"> == </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quest--con quest--con--6" data-level1="6">
+                    <div class="ques--brd--num">
+                      <div class="ques--num">6</div>
+                      <div class="ques--brd">
+                        In HTML, what is the correct way to add a hyperlink?
+                      </div>
+                    </div>
+                    <div class="ques--rep">
+                      <div class="ans--con ans--con--1">
+                        <input
+                          type="radio"
+                          name="anson6"
+                          id="ans--sl3-1.1"
+                          class="ans--input"
+                          data-wrong="wrong"
+                        />
+                        <label for="ans--sl3-1.1"
+                          ><"a src="link">Text<"/a></label
+                        >
+                      </div>
+
+                      <div class="ans--con ans--con--2">
+                        <input
+                          type="radio"
+                          name="anson6"
+                          id="ans--sl3-2.1"
+                          class="ans--input"
+                          data-wrong="wrong"
+                        />
+                        <label for="ans--sl3-2.1"><"a>Text<"/a>link"</label>
+                      </div>
+                      <div class="ans--con ans--con--3">
+                        <input
+                          type="radio"
+                          name="anson6"
+                          id="ans--sl3-3.1"
+                          class="ans--input"
+                          data-answer="correct"
+                        />
+                        <label for="ans--sl3-3.1">
+                          <"a href="link">Text<"/a>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- SLIDE--3 END HERE -->
+              </div>
+              <div class="next--prev--con">
+                <button class="prv--btn">prev</button
+                ><button class="nxt--btn">next</button>
+              </div>
+            </div>
+          </div>
+          <aside class="Q--sidebar">
+            <div class="score--con">
+              <div class="score--value">0</div>
+            </div>
+            <div class="reset--game">
+              <button>Reset</button>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <!-- The layout for the dashboard  end here-->
+  </body>
+</html>

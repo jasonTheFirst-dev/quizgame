@@ -149,9 +149,7 @@ nav li > a {
   width: 100%;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  /* display: none; */
 }
-
 .popup {
   background-color: #fff;
   width: 600px;
@@ -188,7 +186,6 @@ nav li > a {
   line-height: 23px;
   word-wrap: break-word;
   -ms-word-wrap: break-word;
-  /* word-break: break-all; */
   padding-right: 1rem;
 }
 .pop--btn--con {
@@ -439,3 +436,24 @@ nav li > a {
   border-radius: 5px;
 }
 /* dashboard styling end here */
+.opt {
+  display: none;
+}
+@media (max-width: 800px) {
+  #all {
+    display: none;
+  }
+  body{
+    display: grid;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .opt{
+    font-family: var(--family--angkor);
+    display: block;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+}
